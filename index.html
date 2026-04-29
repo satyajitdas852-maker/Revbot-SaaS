@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revbot | Modern Chat Solutions</title>
+    <meta name="description" content="Modern Chat Solutions For Smarter Conversations. Calculate your ROI, explore features and use cases.">
+    <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+    <!-- Global Visual Density Elements (Idea 1) -->
+    <div class="tech-grid"></div>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+    <!-- Burn Rate Ticker -->
+    <div class="burn-ticker text-center">
+        <span class="text-orange">⚠️ LIVE TRACKER:</span> While you've been on this page, traditional businesses just lost <span id="burn-amount" class="text-white font-code font-bold">₹0</span> in missed after-hours leads.
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon"></span> Revbot
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#features">Features</a>
+                <a href="#use-cases">Use Cases</a>
+                <a href="#comparison">Compare</a>
+                <a href="#calculator">ROI Calculator</a>
+            </div>
+            <div class="nav-cta">
+                <a href="#calculator" class="btn btn-outline-green">Contact us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Interactive Demo -->
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">👋 Hey there, Welcome to Revbot</span>
+                <h1>Modern Chat Solutions For <span class="text-gray">Smarter Conversations.</span></h1>
+                <p>Connect teams and customers with fast, intelligent, and seamless messaging. Capture leads at 2am when your competitors are asleep.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn btn-outline-green">Watch Demo</a>
+                </div>
+            </div>
+            
+            <!-- Interactive Chat Demo -->
+            <div class="hero-demo-wrapper">
+                <div class="hero-image-bg"></div>
+                
+                <div class="chat-demo glass-card">
+                    <div class="chat-header">
+                        <div class="chat-avatar"></div>
+                        <div>
+                            <h4>Revbot Assistant</h4>
+                            <span class="online-status">● Online <span id="status-text"></span></span>
+                        </div>
+                        <div class="chat-options">⋮</div>
+                    </div>
+                    <div class="chat-body" id="chat-body">
+                        <div class="chat-msg bot-msg slide-in">Hi there! 👋 I'm Revbot. How can I help you scale your business today?</div>
+                        
+                        <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
+                            <div class="typing-dot"></div>
+                        </div>
+                    </div>
+                    <div class="chat-presets" id="chat-presets">
+                        <button class="preset-btn" data-msg="How much does it cost?"><span class="emoji">💰</span> How much does it cost?</button>
+                        <button class="preset-btn" data-msg="Can I book a demo?"><span class="emoji">📅</span> Can I book a demo?</button>
+                        <button class="preset-btn" data-msg="Does this work on WhatsApp?"><span class="emoji">📱</span> Does this work on WhatsApp?</button>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off">
+                        <button id="send-btn" class="send-btn">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Marquee -->
+    <section class="marquee-section bg-surface border-y">
+        <div class="marquee-container">
+            <div class="marquee-content">
+                <span>Works with WordPress</span>
+                <span class="dot">•</span>
+                <span>Shopify Integration</span>
+                <span class="dot">•</span>
+                <span>Webflow Ready</span>
+                <span class="dot">•</span>
+                <span>Wix Compatible</span>
+                <span class="dot">•</span>
+                <span>Official Meta Partner (WhatsApp, Instagram, Facebook)</span>
+                <span class="dot">•</span>
+                <span>Squarespace Support</span>
+                
+                <!-- Duplicate for seamless scroll -->
+                <span class="dot">•</span>
+                <span>Works with WordPress</span>
+                <span class="dot">•</span>
+                <span>Shopify Integration</span>
+                <span class="dot">•</span>
+                <span>Webflow Ready</span>
+                <span class="dot">•</span>
+                <span>Wix Compatible</span>
+                <span class="dot">•</span>
+                <span>Official Meta Partner (WhatsApp, Instagram, Facebook)</span>
+                <span class="dot">•</span>
+                <span>Squarespace Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instant Onboarding Visualizer (NEW IDEA 2) -->
+    <section class="section border-y text-center pb-0">
+        <div class="container max-w-800">
+            <span class="section-label text-green">• Zero Friction Deployment</span>
+            <h2 class="section-title">Train your AI instantly. <br>Zero coding. Zero logic building.</h2>
+            <p class="section-subtitle mt-3 mb-5">While other platforms force you to manually build "conversation flows" and logic maps for weeks, Revbot learns your business automatically.</p>
+            
+            <div class="onboarding-demo glass-card text-center mt-5 mb-5 mx-auto" style="max-width: 600px;">
+                <p class="text-gray mb-3" style="font-size: 14px;">1. Paste your website URL</p>
+                <div class="url-input-group flex-center" style="gap: 12px; margin-bottom: 24px;">
+                    <input type="text" id="fake-url-input" class="modern-input" placeholder="https://yourcompany.com">
+                    <button id="train-ai-btn" class="btn btn-outline-green" style="padding: 14px 24px; min-width: 160px;">Train AI</button>
+                </div>
+
+                <div id="scanning-state" style="display: none; padding: 24px; text-align: center;">
+                    <div class="radar-spinner mb-3"></div>
+                    <p class="text-green font-code" id="scan-text">Scanning website...</p>
+                </div>
+
+                <div id="success-state" style="display: none; padding: 24px; background: rgba(0, 237, 100, 0.05); border: 1px solid var(--mongo-green); border-radius: 12px;">
+                    <div class="text-green flex-center" style="font-size: 20px; font-weight: bold; gap: 8px;">
+                        <span>✓</span> AI Agent Ready
+                    </div>
+                    <div class="grid" style="grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 16px; text-align: center;">
+                        <div><div class="font-bold text-white text-lg">45</div><div class="text-gray text-sm">Pages Scraped</div></div>
+                        <div><div class="font-bold text-white text-lg">120+</div><div class="text-gray text-sm">Data Points</div></div>
+                        <div><div class="font-bold text-white text-lg">18s</div><div class="text-gray text-sm">Training Time</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The WhatsApp Autopilot Simulator (Idea 2) -->
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <span class="section-label text-green">• Multi-Channel Support</span>
+            <h2 class="section-title">Automate Sales on WhatsApp</h2>
+            <p class="section-subtitle mb-5 max-w-800 mx-auto">Don't force customers to your website. Revbot lives natively in their favorite app. Watch the autopilot in action.</p>
+            
+            <div class="whatsapp-showcase mt-5">
+                <div class="iphone-wrapper" style="position: relative; display: inline-block;">
+                    <!-- Floating Badges -->
+                    <div class="floating-badge badge-1 slide-in" style="animation-delay: 1s;">🎯 Intent Detected: Purchase</div>
+                    <div class="floating-badge badge-2 slide-in" style="animation-delay: 3s;">📦 Stock: 2 Available</div>
+                    <div class="floating-badge badge-3 slide-in" style="animation-delay: 5s;">💳 Secure Payment Sent</div>
+                    
+                    <!-- Real iPhone Mockup (Ultra Realistic CSS) -->
+                    <div class="iphone-frame">
+                        <!-- Hardware Buttons -->
+                        <div class="hw-btn btn-mute"></div>
+                        <div class="hw-btn btn-vol-up"></div>
+                        <div class="hw-btn btn-vol-down"></div>
+                        <div class="hw-btn btn-power"></div>
+                        
+                        <!-- Screen -->
+                        <div class="iphone-screen">
+                            <div class="dynamic-island">
+                                <div class="sensor"></div>
+                                <div class="camera"></div>
+                            </div>
+                            
+                            <!-- Screen Glare -->
+                            <div class="glare"></div>
+                            
+                            <div class="wa-header">
+                                <div class="wa-avatar"></div>
+                                <div class="wa-contact-info">
+                                    <div class="wa-name">Revbot Store <span class="wa-verified">✓</span></div>
+                                    <div class="wa-status">bot</div>
+                                </div>
+                            </div>
+                            <div class="wa-body" id="wa-chat">
+                                <div class="wa-msg user-msg">Hi! Do you have the Air Sneakers in size 10?</div>
+                                <div class="wa-msg bot-msg wa-typing" style="display: none;">typing...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strict vs Creative Toggle (NEW IDEA 3) -->
+    <section class="section bg-surface border-y">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label text-green">• Total Control</span>
+                <h2 class="section-title">Strict Guardrails or Creative Freedom? You choose.</h2>
+                <p class="section-subtitle max-w-800 mx-auto">Lock down the bot with strict buttons to prevent hallucinations, or let the AI creatively answer any open-ended question. Toggle below to see the UI adapt.</p>
+                
+                <div class="toggle-container mt-4 mb-5 mx-auto" style="display: flex; justify-content: center; align-items: center; gap: 16px;">
+                    <span id="label-strict" class="text-green font-bold transition-all">Strict Rules</span>
+                    <label class="switch">
+                        <input type="checkbox" id="ai-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span id="label-creative" class="text-gray transition-all">Creative AI</span>
+                </div>
+            </div>
+            
+            <div style="display: flex; justify-content: center; width: 100%;">
+                <div class="chat-demo glass-card" style="height: 400px; width: 100%; max-width: 500px;">
+                    <div class="chat-body" id="demo3-chat-body" style="justify-content: flex-end; padding-bottom: 0;">
+                        <div class="chat-msg bot-msg slide-in" style="align-self: center; text-align: center;">What size t-shirt are you looking for?</div>
+                    </div>
+                    
+                    <!-- Strict UI State -->
+                    <div id="ui-strict" style="padding: 16px; border-top: 1px solid rgba(255,255,255,0.05);">
+                        <p class="text-gray text-sm text-center mb-2">Select an option:</p>
+                        <div class="grid" id="demo3-strict-options" style="grid-template-columns: 1fr 1fr 1fr; gap: 8px;">
+                            <button class="preset-btn text-center justify-center demo3-btn" style="width: 100%;">Small</button>
+                            <button class="preset-btn text-center justify-center demo3-btn" style="width: 100%;">Medium</button>
+                            <button class="preset-btn text-center justify-center demo3-btn" style="width: 100%;">Large</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Creative UI State -->
+                    <div id="ui-creative" style="display: none; padding: 16px; border-top: 1px solid rgba(255,255,255,0.05); background: rgba(0,0,0,0.2);">
+                        <p class="text-gray text-sm text-center mb-2">Ask anything openly:</p>
+                        <div style="display: flex; gap: 8px;">
+                            <input type="text" id="demo3-input" class="modern-input" placeholder="e.g. Do you have an oversized fit in XL?" style="flex-grow: 1;">
+                            <button id="demo3-send-btn" class="send-btn" style="flex-shrink: 0;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A Day in the Life Timeline (Idea 4) -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label text-green">• 24/7 Engine</span>
+                <h2 class="section-title">A Day in the Life of Revbot</h2>
+                <p class="section-subtitle">While your human team sleeps, eats, and takes breaks, the AI keeps working.</p>
+            </div>
+            
+            <div class="timeline-container mt-5">
+                <div class="timeline-line"></div>
+                <div class="timeline-progress" id="timeline-progress"></div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="text-green font-code">09:00 AM</span>
+                        <h3>Morning Rush</h3>
+                        <p class="text-gray text-sm">Instantly handled 45 concurrent support tickets from the weekend without breaking a sweat.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="text-green font-code">02:30 PM</span>
+                        <h3>Lead Qualification</h3>
+                        <p class="text-gray text-sm">Scored and routed 12 high-intent enterprise leads directly to the Sales Team's CRM.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="text-green font-code">11:45 PM</span>
+                        <h3>Midnight Sales</h3>
+                        <p class="text-gray text-sm">Booked 3 product demos and captured 5 OTP-verified leads while the entire company was asleep.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Score Gamification (NEW IDEA 4) -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1.2fr 0.8fr; align-items: center; gap: 64px;">
+                <div>
+                    <span class="section-label text-green">• Lead Qualification</span>
+                    <h2 class="section-title">We don't just chat.<br>We score and route.</h2>
+                    <p class="mt-3">Stop filling your CRM with junk leads. Revbot asks strategic questions, calculates a live Lead Score based on your criteria, and automatically routes high-value prospects directly to your sales team's WhatsApp or calendar.</p>
+                    <button id="start-scoring-btn" class="btn btn-outline-green mt-4">Simulate Lead Capture ▶</button>
+                </div>
+                
+                <div class="glass-card" style="display: flex; gap: 24px; align-items: center; padding: 32px;">
+                    <div style="flex-grow: 1;">
+                        <div class="chat-msg bot-msg mb-3" style="font-size: 13px;">What is your budget?</div>
+                        <div class="chat-msg user-msg mb-3 slide-in" id="sim-user-1" style="display: none; font-size: 13px;">Over $10,000</div>
+                        <div class="chat-msg bot-msg mb-3 slide-in" id="sim-bot-1" style="display: none; font-size: 13px;">And what is your timeline?</div>
+                        <div class="chat-msg user-msg slide-in" id="sim-user-2" style="display: none; font-size: 13px;">ASAP</div>
+                    </div>
+                    <div style="width: 120px; height: 120px; flex-shrink: 0; position: relative;">
+                        <!-- SVG Circular Progress -->
+                        <svg viewBox="0 0 100 100" style="transform: rotate(-90deg); width: 100%; height: 100%;">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="10"/>
+                            <circle id="score-circle" cx="50" cy="50" r="45" fill="none" stroke="var(--mongo-green)" stroke-width="10" stroke-dasharray="283" stroke-dashoffset="283" style="transition: stroke-dashoffset 1s ease-out;"/>
+                        </svg>
+                        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                            <span id="score-number" class="text-white font-bold" style="font-size: 24px;">0</span>
+                            <span class="text-gray" style="font-size: 10px;">SCORE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="routing-alert" class="mt-4 text-center text-green font-bold slide-in" style="display: none; padding: 12px; background: rgba(0,237,100,0.1); border-radius: 8px;">
+                🚀 HOT LEAD QUALIFIED - Routing to Account Executive...
+            </div>
+        </div>
+    </section>
+
+    <!-- Translation Demo (Idea 1 from previous) -->
+    <section class="section bg-surface border-y">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 64px;">
+                <div class="translation-ui glass-card">
+                    <div class="lang-flags flex-center mb-4">
+                        <button class="flag-btn active" data-lang="en">🇬🇧 English</button>
+                        <button class="flag-btn" data-lang="es">🇪🇸 Español</button>
+                        <button class="flag-btn" data-lang="hi">🇮🇳 Hindi</button>
+                        <button class="flag-btn" data-lang="ar">🇸🇦 Arabic</button>
+                    </div>
+                    <div class="translate-chat-body" id="translate-chat">
+                        <div class="chat-msg user-msg slide-in">Do you offer free shipping?</div>
+                        <div class="chat-msg bot-msg slide-in" id="trans-bot-reply">Yes! We offer free shipping on all orders over ₹999. It usually takes 2-3 business days.</div>
+                    </div>
+                </div>
+                <div>
+                    <span class="section-label text-green">• Global Reach</span>
+                    <h2 class="section-title">Speaks your customers' language. Fluently.</h2>
+                    <p class="mt-3">Don't lose sales because of language barriers. Revbot automatically detects the customer's language and replies perfectly in over 100+ languages in real-time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Screen Race (Idea 3 from previous) -->
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <span class="section-label text-green">• Speed to Lead</span>
+            <h2 class="section-title">Don't make them wait.</h2>
+            <p class="section-subtitle mb-5">In 2026, if you don't reply in 5 minutes, you lose the deal. Watch how Revbot compares to human support.</p>
+            
+            <div class="race-container">
+                <div class="race-lane human-lane glass-card">
+                    <h3 class="text-gray">Traditional Support</h3>
+                    <div class="race-timer" id="human-timer">Wait Time: 4 hrs 12 mins</div>
+                    <div class="race-bar-wrapper">
+                        <div class="race-bar human-bar"></div>
+                    </div>
+                    <p class="text-sm text-gray mt-3">Customer gets frustrated and leaves for a competitor.</p>
+                </div>
+                
+                <div class="race-lane ai-lane glass-card border-green">
+                    <h3 class="text-white">Revbot AI</h3>
+                    <div class="race-timer text-green" id="ai-timer">Response Time: 0.8s</div>
+                    <div class="race-bar-wrapper">
+                        <div class="race-bar ai-bar"></div>
+                    </div>
+                    <p class="text-sm text-green mt-3">Instant resolution. Lead captured and verified.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Diagram (Idea 4 from previous) -->
+    <section class="section bg-surface">
+        <div class="container text-center">
+            <span class="section-label text-green">• Under the Hood</span>
+            <h2 class="section-title">Enterprise-Grade Infrastructure</h2>
+            <p class="section-subtitle mb-5">Not just a wrapper. Revbot is built on a scalable, secure RAG architecture designed to process millions of messages with zero downtime.</p>
+            
+            <div class="architecture-diagram">
+                <div class="arch-node">
+                    <div class="arch-icon">👤</div>
+                    <p>Customer<br>(WhatsApp / Web)</p>
+                </div>
+                <div class="arch-line line-animated"></div>
+                <div class="arch-node node-core">
+                    <div class="arch-icon">🧠</div>
+                    <p>Revbot<br>Core Engine</p>
+                </div>
+                <div class="arch-line line-animated"></div>
+                <div class="arch-split">
+                    <div class="arch-node node-small">
+                        <div class="arch-icon">📄</div>
+                        <p>Your Data<br>(Vector DB)</p>
+                    </div>
+                    <div class="arch-node node-small">
+                        <div class="arch-icon">🤖</div>
+                        <p>LLM API<br>(OpenAI/Claude)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wall of Love (Idea 3) -->
+    <section class="section bg-surface border-y overflow-hidden relative">
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <span class="section-label text-green">• Social Proof</span>
+            <h2 class="section-title">Trusted by Modern Teams</h2>
+            <p class="section-subtitle mb-5">Join thousands of founders who stopped losing sleep over missed leads.</p>
+        </div>
+        
+        <div class="masonry-grid-wrapper mt-4">
+            <!-- Overlay gradients to fade out top/bottom -->
+            <div class="masonry-overlay-top"></div>
+            <div class="masonry-overlay-bottom"></div>
+            
+            <div class="masonry-grid" id="wall-of-love">
+                <!-- Column 1 -->
+                <div class="masonry-col col-scroll-down">
+                    <div class="review-card glass-card">
+                        <div class="flex-center" style="justify-content: flex-start; margin-bottom: 12px;">
+                            <div class="avatar bg-gradient-green" style="width: 32px; height: 32px; border-radius: 50%;"></div>
+                            <div class="text-left"><div class="text-white text-sm font-bold">Sarah Jenkins</div><div class="text-gray" style="font-size: 11px;">@sarah_j_ecom</div></div>
+                        </div>
+                        <p class="text-sm text-gray">Revbot completely replaced our need to hire a weekend support team. It handles 80% of our WhatsApp queries instantly. ROI was positive on day 1.</p>
+                    </div>
+                    <div class="review-card glass-card">
+                        <div class="flex-center" style="justify-content: flex-start; margin-bottom: 12px;">
+                            <div class="avatar bg-dark" style="width: 32px; height: 32px; border-radius: 50%;"></div>
+                            <div class="text-left"><div class="text-white text-sm font-bold">Michael Chen</div><div class="text-gray" style="font-size: 11px;">Agency Owner</div></div>
+                        </div>
+                        <p class="text-sm text-gray">The zero-coding setup is magic. I pasted my website URL and the AI knew my entire pricing structure in 10 seconds. Unbelievable tech.</p>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="masonry-col col-scroll-up" style="margin-top: -50px;">
+                    <div class="review-card glass-card" style="border-color: var(--mongo-green);">
+                        <div class="flex-center" style="justify-content: flex-start; margin-bottom: 12px;">
+                            <div class="avatar bg-surface" style="width: 32px; height: 32px; border-radius: 50%;"></div>
+                            <div class="text-left"><div class="text-white text-sm font-bold">David R.</div><div class="text-gray" style="font-size: 11px;">Real Estate Broker</div></div>
+                        </div>
+                        <div class="text-green mb-2">★★★★★</div>
+                        <p class="text-sm text-gray">We capture leads at 2 AM now. I wake up, open my CRM, and there are 5 hot, OTP-verified leads waiting for me. Game changer.</p>
+                    </div>
+                    <div class="review-card glass-card">
+                        <div class="flex-center" style="justify-content: flex-start; margin-bottom: 12px;">
+                            <div class="avatar bg-gradient-green" style="width: 32px; height: 32px; border-radius: 50%;"></div>
+                            <div class="text-left"><div class="text-white text-sm font-bold">Amanda T.</div><div class="text-gray" style="font-size: 11px;">SaaS Founder</div></div>
+                        </div>
+                        <p class="text-sm text-gray">Better than Intercom. Way faster to set up than Landbot. It's the perfect middle ground between strict rules and creative AI.</p>
+                    </div>
+                </div>
+                <!-- Column 3 -->
+                <div class="masonry-col col-scroll-down">
+                    <div class="review-card glass-card">
+                        <div class="flex-center" style="justify-content: flex-start; margin-bottom: 12px;">
+                            <div class="avatar bg-dark" style="width: 32px; height: 32px; border-radius: 50%;"></div>
+                            <div class="text-left"><div class="text-white text-sm font-bold">Carlos M.</div><div class="text-gray" style="font-size: 11px;">Auto Dealership</div></div>
+                        </div>
+                        <p class="text-sm text-gray">The multilingual feature is flawless. We have Spanish-speaking customers and the bot translates perfectly on WhatsApp.</p>
+                    </div>
+                    <div class="review-card glass-card">
+                        <div class="flex-center" style="justify-content: flex-start; margin-bottom: 12px;">
+                            <div class="avatar bg-surface" style="width: 32px; height: 32px; border-radius: 50%;"></div>
+                            <div class="text-left"><div class="text-white text-sm font-bold">TechCrunch Reviewer</div><div class="text-gray" style="font-size: 11px;">Tech Blog</div></div>
+                        </div>
+                        <p class="text-sm text-gray">Revbot represents the next generation of conversational AI. It's not just a chat widget, it's a full lead-routing engine.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Drag-Slider ROI Calculator -->
+    <section id="calculator" class="section bg-dark border-y">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label text-green">• ROI Calculator</span>
+                <h2 class="section-title">Calculate Your AI Chatbot Savings</h2>
+                <p class="section-subtitle">Slide the toggles to see how much revenue you're leaving on the table. (Calculations in ₹)</p>
+            </div>
+            
+            <div class="calculator-card glass-card">
+                <div class="calc-grid">
+                    <div class="calc-inputs">
+                        <div class="input-group">
+                            <label for="visitors">Monthly Website Visitors: <span id="val-visitors" class="text-green text-lg">5,000</span></label>
+                            <input type="range" id="visitors" min="1000" max="100000" step="1000" value="5000" class="neon-slider">
+                        </div>
+                        <div class="input-group">
+                            <label for="conv-rate">Current Conversion Rate: <span id="val-conv-rate" class="text-green text-lg">2%</span></label>
+                            <input type="range" id="conv-rate" min="0.5" max="10" step="0.5" value="2" class="neon-slider">
+                        </div>
+                        <div class="input-group">
+                            <label for="aov">Average Order Value (₹): <span id="val-aov" class="text-green text-lg">₹1,500</span></label>
+                            <input type="range" id="aov" min="100" max="10000" step="100" value="1500" class="neon-slider">
+                        </div>
+                        <div class="input-group">
+                            <label for="tickets">Monthly Support Tickets: <span id="val-tickets" class="text-green text-lg">1,000</span></label>
+                            <input type="range" id="tickets" min="100" max="20000" step="100" value="1000" class="neon-slider">
+                        </div>
+                    </div>
+                    
+                    <div class="calc-results-area">
+                        <div class="result-card">
+                            <p class="result-label">Additional Monthly Revenue</p>
+                            <h3 class="result-value text-green" id="result-revenue">₹0</h3>
+                        </div>
+                        <div class="result-card">
+                            <p class="result-label">Monthly Support Costs Saved</p>
+                            <h3 class="result-value text-green" id="result-savings">₹0</h3>
+                        </div>
+                        <div class="result-card total-card glow-effect">
+                            <p class="result-label text-white">Total Monthly Value Generated</p>
+                            <h3 class="result-value text-white" id="result-total">₹0</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section id="comparison" class="section bg-surface border-y">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label text-green">• Transparent Comparison</span>
+                <h2 class="section-title">Why Revbot Wins</h2>
+            </div>
+            
+            <div class="comparison-wrapper glass-card" style="padding: 0; overflow: hidden;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid var(--border-color); background: rgba(0,0,0,0.2);">
+                            <th style="padding: 24px; color: var(--text-white); font-weight: 500;">Features</th>
+                            <th style="padding: 24px; color: var(--text-gray); font-weight: 500;">Traditional Chatbots</th>
+                            <th style="padding: 24px; color: var(--mongo-green); font-weight: 600; font-size: 18px; border-left: 1px solid var(--border-color);">Revbot AI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 20px 24px; color: var(--text-white);">Setup Time</td>
+                            <td style="padding: 20px 24px;">Weeks (Requires Devs)</td>
+                            <td style="padding: 20px 24px; border-left: 1px solid var(--border-color); color: var(--text-white);">Under 5 Minutes</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 20px 24px; color: var(--text-white);">Lead Verification</td>
+                            <td style="padding: 20px 24px;">None (Fake emails)</td>
+                            <td style="padding: 20px 24px; border-left: 1px solid var(--border-color); color: var(--text-white);">OTP Phone Verification ✓</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 20px 24px; color: var(--text-white);">Model Lock-in</td>
+                            <td style="padding: 20px 24px;">Yes (Stuck with one LLM)</td>
+                            <td style="padding: 20px 24px; border-left: 1px solid var(--border-color); color: var(--text-white);">No (OpenAI, Anthropic, Gemini) ✓</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-color);">
+                            <td style="padding: 20px 24px; color: var(--text-white);">WhatsApp & Instagram</td>
+                            <td style="padding: 20px 24px;">Expensive Add-ons</td>
+                            <td style="padding: 20px 24px; border-left: 1px solid var(--border-color); color: var(--text-white);">Included on all plans ✓</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 20px 24px; color: var(--text-white);">Multilingual</td>
+                            <td style="padding: 20px 24px;">Manual Translation Setup</td>
+                            <td style="padding: 20px 24px; border-left: 1px solid var(--border-color); color: var(--text-white);">Automatic (100+ Languages) ✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-dark">
+        <div class="container max-w-800">
+            <div class="text-center mb-5">
+                <span class="section-label text-green">• FAQ</span>
+                <h2 class="section-title">Everything you need to know</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">How does the chatbot learn my business?</button>
+                    <div class="faq-answer">
+                        <p>You add your website URL — we scrape and process it automatically — or upload documents like PDFs, Word files, FAQs, or brochures. Your chatbot learns from whatever you give it and answers questions based only on that content.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What platforms does it work on?</button>
+                    <div class="faq-answer">
+                        <p>Website chat widget, WhatsApp, Instagram DM, and Facebook Messenger. All four are live on every plan today, connected via official APIs — stable and fully compliant.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do I need a developer to set it up?</button>
+                    <div class="faq-answer">
+                        <p>No. You can go live in under 5 minutes without writing a single line of code. Embed on your website with a simple snippet, or connect your social channels through guided steps in the dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Banner -->
+    <section class="section pt-0 bg-dark">
+        <div class="container">
+            <div class="cta-banner bg-gradient-green">
+                <div class="cta-content text-center text-white">
+                    <h2>Your next customer is asking a question right now.</h2>
+                    <p class="mt-3 opacity-80" style="font-size: 18px;">Add your website or upload your documents — your AI agent is live in under 5 minutes.</p>
+                    <a href="#" class="btn btn-white mt-5">Start 7-Day Free Trial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Footer -->
+    <footer class="footer">
+        <div class="footer-glow-line"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="logo text-white">
+                        <span class="logo-icon bg-white"></span> Revbot
+                    </div>
+                    <p class="mt-3 text-gray" style="font-size: 14px;">The AI-first customer experience platform. We help ambitious teams capture more leads and scale support without hiring.</p>
+                    
+                    <div class="social-icons mt-4">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product Column -->
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <a href="#">AI Chatbots</a>
+                    <a href="#">WhatsApp Integration</a>
+                    <a href="#">Lead Qualification</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Changelog <span class="badge-new">New</span></a>
+                </div>
+                
+                <!-- Resources Column -->
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <a href="#">Developer API</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Community Forum</a>
+                    <a href="#">Blog & Guides</a>
+                    <a href="#">Help Center</a>
+                </div>
+                
+                <!-- Newsletter Column -->
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p class="text-gray mb-3" style="font-size: 13px;">Get the latest AI automation strategies delivered to your inbox twice a month.</p>
+                    <div class="newsletter-input-group">
+                        <input type="email" placeholder="Enter your email" class="modern-input" style="padding: 10px 14px; font-size: 14px; border-radius: 8px;">
+                        <button class="btn-subscribe">→</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="system-status">
+                    <span class="status-dot"></span> All systems operational
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2026 Revbot. All rights reserved.</p>
+                </div>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=4"></script>
+</body>
+</html>
